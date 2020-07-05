@@ -7,7 +7,19 @@ Page({
    */
   data: {
     activeKey: 0,
-    active: 1
+    active: 1,
+    curContent: 'proList', //proList为产品列表，detail为详情
+    TabCur: 0 
+  },
+  lookDetail() {
+    this.setData({
+      curContent: 'detail'
+    })
+  },
+  detailBack(){
+    this.setData({
+      curContent: 'proList'
+    })
   },
   tabSelect(e) {
     this.setData({

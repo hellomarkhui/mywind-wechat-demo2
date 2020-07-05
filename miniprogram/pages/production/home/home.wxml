@@ -12,49 +12,124 @@
       产品包3
     </view>
   </scroll-view>
-  <scroll-view  class="content" scroll-y="true">
-      <view class="content-item" id="content-0">
-        <view class="item-row">
-          <view class="row-img">
-            图片
+  <scroll-view  class="content {{curContent==='proList'?'':'hide'}}" scroll-y="true">
+    <view class="content-item" id="content-0">
+      <view class="item-row">
+        <view class="row-img">
+          图片
+        </view>
+        <view class="row-txt">
+          <view class="cu-bar"> 产品名称</view>
+          <view class="text-gray text-sm flex txt-describe">
+            量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
           </view>
-          <view class="row-txt">
-            <view class="cu-bar"> 产品名称</view>
-            <view class="text-gray text-sm flex txt-describe">
-              量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
-            </view>
-            <view class="cu-bar"><button class="cu-btn">详情</button></view>
-          </view>
+          <view class="cu-bar"><button class="cu-btn" bindtap="lookDetail">详情</button></view>
         </view>
       </view>
-      <view class="content-item" id="content-0">
-        <view class="item-row">
-          <view class="row-img">
-            图片
+    </view>
+    <view class="content-item" id="content-1">
+      <view class="item-row">
+        <view class="row-img">
+          图片
+        </view>
+        <view class="row-txt">
+          <view class="cu-bar"> 产品名称</view>
+          <view class="text-gray text-sm flex txt-describe">
+            量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
           </view>
-          <view class="row-txt">
-            <view class="cu-bar"> 产品名称</view>
-            <view class="text-gray text-sm flex txt-describe">
-              量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
-            </view>
-            <view class="cu-bar"><button class="cu-btn">详情</button></view>
-          </view>
+          <view class="cu-bar"><button class="cu-btn"  bindtap="lookDetail">详情</button></view>
         </view>
       </view>
-      <view class="content-item" id="content-0">
-        <view class="item-row">
-          <view class="row-img">
-            图片
+    </view>
+    <view class="content-item" id="content-2">
+      <view class="item-row">
+        <view class="row-img">
+          图片
+        </view>
+        <view class="row-txt">
+          <view class="cu-bar"> 产品名称</view>
+          <view class="text-gray text-sm flex txt-describe">
+            量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
           </view>
-          <view class="row-txt">
-            <view class="cu-bar"> 产品名称</view>
-            <view class="text-gray text-sm flex txt-describe">
-              量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
-            </view>
-            <view class="cu-bar"><button class="cu-btn">详情</button></view>
-          </view>
+          <view class="cu-bar"><button class="cu-btn"  bindtap="lookDetail">详情</button></view>
         </view>
       </view>
+    </view>
+  </scroll-view>
+  <scroll-view  class="content {{curContent==='detail'?'':'hide'}}" scroll-y="true" >
+    <view class="detail">
+      <view class="box">
+        <view class="cu-bar bg-white">
+          <view class="action" bindtap="detailBack">
+            <text class="cuIcon-back text-gray"></text> 返回
+          </view>
+        </view>
+        <view class="cu-bar bg-white margin-top solid-bottom">
+          <view class="action">
+            <text class="cuIcon-title text-orange"></text>产品名称：
+          </view>
+        </view>
+        <view class="cu-card article">
+          <view class="cu-item shadow">
+            <view class="title">
+              <view class="text-cut text-center">量云快速调频系统</view>
+            </view>
+          </view>
+        </view>
+        <view class="cu-bar bg-white margin-top solid-bottom">
+          <view class="action">
+            <text class="cuIcon-title text-orange"></text>产品概述：
+          </view>
+        </view>
+        <view class="cu-card article">
+          <view class="cu-item shadow">
+            <view class="content">
+              <view class="desc">
+                <view class="text-content">量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="cu-bar bg-white margin-top solid-bottom">
+          <view class="action">
+            <text class="cuIcon-title text-orange"></text>应用场景：
+          </view>
+        </view>
+        <view class="cu-card article">
+          <view class="cu-item shadow">
+            <view class="content">
+              <view class="desc">
+                <view class="text-content">新能源场站
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="cu-bar bg-white margin-top solid-bottom">
+          <view class="action">
+            <text class="cuIcon-title text-orange"></text>技术优势：
+          </view>
+        </view>
+        <view class="cu-card article">
+          <view class="cu-item shadow">
+            <view class="content">
+              <view class="desc">
+                <view class="text-content">
+                  最早于2016年开始筹备新能源场站场级调频相关工作，并于2017年年初被选为国内首批参与调频试验的厂家，年内圆满完成了快速频率响应的项目开发、实施及测试，并得到了中国电科院的验收认可，有着丰富的调频技术与经验积累。
+通过中国电科院、新疆电科院、陕西电科院、宁夏电科院等多个专业机构的验收认证，具备与多个地方电网沟通调试经验，也是首批执行西北调控[2018]225号文标准，并通过验收的厂家。
+独立设计符合电力标准的产品，满足高精度、高频次的快速频率调节性能要求。
+（4）支持变桨、惯量、变桨+惯量联动等多种调节控制策略。
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
   </scroll-view>
 </view>
 

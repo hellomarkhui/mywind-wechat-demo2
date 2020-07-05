@@ -44,7 +44,7 @@ scroll-view {
   margin: auto;
 }
 
-.content {
+scroll-view.content {
   background-color: #f1f1f1;
   height: 100%;
 }
@@ -94,4 +94,10 @@ scroll-view {
 .txt-describe {
   min-height: 100rpx;
   padding-right: 30rpx;
+}
+.detail {
+  padding: 30rpx 30rpx 0 30rpx;
+}
+.cu-card>.cu-item {
+  margin: 0;
 }
