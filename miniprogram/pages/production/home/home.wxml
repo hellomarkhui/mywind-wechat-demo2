@@ -1,0 +1,60 @@
+<!--pages/production/home/home.wxml-->
+<company-info></company-info>
+<view class="main">
+  <scroll-view class="sidebar" scroll-y="true">
+    <view bindtap="tabSelect" class="tab-item {{TabCur == '0'?'tab-cur':''}}" data-id="0">
+      产品包1
+    </view>
+    <view bindtap="tabSelect" class="tab-item {{TabCur == '1'?'tab-cur':''}}" data-id="1">
+      产品包2
+    </view>
+    <view bindtap="tabSelect" class="tab-item {{TabCur == '2'?'tab-cur':''}}" data-id="2">
+      产品包3
+    </view>
+  </scroll-view>
+  <scroll-view  class="content" scroll-y="true">
+      <view class="content-item" id="content-0">
+        <view class="item-row">
+          <view class="row-img">
+            图片
+          </view>
+          <view class="row-txt">
+            <view class="cu-bar"> 产品名称</view>
+            <view class="text-gray text-sm flex txt-describe">
+              量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
+            </view>
+            <view class="cu-bar"><button class="cu-btn">详情</button></view>
+          </view>
+        </view>
+      </view>
+      <view class="content-item" id="content-0">
+        <view class="item-row">
+          <view class="row-img">
+            图片
+          </view>
+          <view class="row-txt">
+            <view class="cu-bar"> 产品名称</view>
+            <view class="text-gray text-sm flex txt-describe">
+              量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
+            </view>
+            <view class="cu-bar"><button class="cu-btn">详情</button></view>
+          </view>
+        </view>
+      </view>
+      <view class="content-item" id="content-0">
+        <view class="item-row">
+          <view class="row-img">
+            图片
+          </view>
+          <view class="row-txt">
+            <view class="cu-bar"> 产品名称</view>
+            <view class="text-gray text-sm flex txt-describe">
+              量云快速调频系统也称一次调频系统，是指电网的频率一旦偏离额定值时，快速频率响应系统主动地控制机组有功功率的增减，限制电网频率变化，使电网频率维持稳定的自动控制过程。
+            </view>
+            <view class="cu-bar"><button class="cu-btn">详情</button></view>
+          </view>
+        </view>
+      </view>
+  </scroll-view>
+</view>
+
